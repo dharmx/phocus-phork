@@ -63,3 +63,9 @@ npm run watch_and_reload
 
 Enjoy this quick demo of the ultimate comfort workflow:
 ![ultimate comfort demo](https://i.imgur.com/UjUpmG1.gif)
+
+## Desktop Makers Discord
+
+<a href="https://discord.gg/DdVdR7TdRk" title="Desktop Makers"><img align="left" width="72" alt="type=discord" src="https://user-images.githubusercontent.com/1282767/161089772-d7ad28bf-76eb-4951-b0f0-985afd5ea57a.png"></a>
+
+I am actively working on phocus and other cool projects on the [Desktop Makers Discord server](https://discord.gg/DdVdR7TdRk). It aims to be a community for communities of Linux desktop related projects and close the gap between the awesome people behind them. If you are looking to collaborate with or want to get involved in great projects, this might be the right place for you.
