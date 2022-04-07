@@ -25,5 +25,9 @@
   "homepage": "https://github.com/phocus/gtk#readme",
   "devDependencies": {
     "sass": "^1.32.12"
+  },
+  "dependencies": {
+    "postcss-scss": "^4.0.3",
+    "stylelint": "^14.6.1"
   }
 }
