@@ -1,9 +1,13 @@
 @use '../colors';
+@use '../config';
 
-toolbar {
-  background: colors.$surface-2;
+toolbar, .toolbar {
+  background: colors.$surface-strong;
+  padding: config.$spacing-medium;
+
   &.osd {
-    background: transparentize(colors.$surface-3, 0.5);
-    padding: 10px;
+    background: colors.$surface-weak;
+    padding: config.$spacing-medium;
+    border-radius: config.$radius;
   }
 }

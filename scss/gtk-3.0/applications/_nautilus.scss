@@ -1,29 +1,62 @@
+@use 'sass:color';
 @use '../colors';
+@use '../config';
 
 window.nautilus-window {
-  .nautilus-menu-sort-heading {
-    margin: 0 -5px;
-  }
-
   // those are the items inside the nautilus canvas
   .nautilus-canvas-item {
+    border-radius: config.$radius;
     &:selected, &:active {
-      background: #2d2d2d;
-      border-radius: 3px;
+      background: color.change(colors.$accent-primary, $alpha: config.$tint-medium);
     }
   }
 
   // this is the floating bar usually shown at the bottom right of nautilus when elements are selected
   .floating-bar {
-    background: colors.$surface-2;
-    color: colors.$foreground-color;
-    padding: 4px;
+    background: colors.$surface-strong;
+    color: colors.$white-strong;
+    padding: config.$spacing-small;
 
     &.bottom.left {
-      border-top-right-radius: 3px;
+      border-top-right-radius: config.$radius;
     }
     &.bottom.right {
-      border-top-left-radius: 3px;
+      border-top-left-radius: config.$radius;
+    }
+  }
+
+  .nautilus-path-bar {
+    background: colors.$white-weakest;
+      border-radius: config.$radius;
+
+    > button {
+      background: transparent;
+      &:hover {
+        background: colors.$white-weakest;
+      }
+    }
+
+    .path-buttons-box {
+      button {
+        background: transparent;
+        &:hover:not(.current-dir) {
+          background: transparent;
+          label {
+            color: colors.$white-moderate;
+          }
+        }
+      }
+      .dim-label {
+        color: colors.$white-weak;
+        opacity: 1;
+      }
+    }
+  }
+
+  .operations-list {
+    background: transparent;
+    row {
+      background: transparent;
     }
   }
 }

@@ -1,32 +1,31 @@
 @use '../colors';
 
 calendar {
-  background: colors.$surface-2;
+  background: colors.$surface-strong;
 
   &.button {
-    background: colors.$surface-3;
-    color: rgba(255,255,255,0.5);
+    background: colors.$surface-moderate;
+    color: colors.$white-moderate;
 
-    &:hover { color: rgba(255,255,255,0.8); }
-    &:disabled { color: rgba(255,255,255,0.1); }
+    &:hover { color: colors.$white-strong; }
+    &:disabled { color: colors.$white-weakest; }
   }
 
   &.header {
-    background: colors.$surface-3;
-
+    background: colors.$surface-moderate;
   }
 
   &.highlight {
-    color: rgba(255,255,255,.2);
+    color: colors.$white-moderate;
   }
 
   &:selected {
-    color: white;
-    border-radius: 0.3em;
-    background: colors.$primary-accent;
+    color: colors.$white-strongest;
+    border-radius: 0.5em;
+    background: colors.$accent-primary;
   }
 
   &:indeterminate {
-    color: rgba(255,255,255,.1);
+    color: colors.$white-weak;
   }
 }

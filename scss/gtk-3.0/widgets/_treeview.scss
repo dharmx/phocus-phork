@@ -1,45 +1,43 @@
+@use 'sass:color';
 @use '../colors';
+@use '../config';
 
 // TODO: check if full width horizontal separators are possible
 
 treeview {
-  -GtkTreeView-expander-size: 13;
+  -GtkTreeView-expander-size: 16;
   -GtkTreeView-grid-line-pattern: '';
   -GtkTreeView-tree-line-pattern: '';
-  -GtkTreeView-horizontal-separator: 8;
-  -GtkTreeView-vertical-separator: 8;
+  -GtkTreeView-horizontal-separator: 12;
+  -GtkTreeView-vertical-separator: 12;
 
-  background: colors.$surface-2;
-
-  border-left-color: colors.$highlight; // TODO: check if there is going to be a new way to define tree-lines
-  border-top-color: colors.$highlight; // TODO: check if there is going to be a new way to define column-lines
+  border-left-color: colors.$white-weakest; // TODO: check if there is going to be a new way to define tree-lines
+  border-top-color: colors.$white-weakest; // TODO: check if there is going to be a new way to define column-lines
 
   &:hover {
-    background: colors.$highlight;
+    background: colors.$white-weakest;
   }
 
   &:selected {
-    background: colors.$accent-7;
-    // TODO: introduce contrast foreground color (light)
-    color: lighten(colors.$accent-7, 50%);
+    background: color.change(colors.$accent-primary, $alpha: config.$tint-medium);
+    color: colors.$white-strongest;
   }
 
-  &.separator {
-    color: colors.$highlight;
-    min-height: 2px;
-  }
-
-  header {
+  header { 
     button {
-      border-bottom: 1px solid colors.$highlight;
-      background: colors.$surface-3;
+      padding: config.$spacing-medium;
+      background: colors.$surface-strong;
+      border-radius: 0;
+      color: colors.$white-moderate;
 
-      &:hover {
-        background: colors.$highlight;
+      &:hover:not(:active) {
+        color: colors.$white-strong;
+        background: colors.$surface-strong;
       }
 
       &:not(:last-child) {
-        border-right: 1px solid colors.$surface-3;
+        // TODO: check if there is a way to thicken threeview borders (other than this one)
+        border-right: 1px solid colors.$white-weakest;
       }
     }
   }
