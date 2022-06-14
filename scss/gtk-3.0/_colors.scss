@@ -1,23 +1,16 @@
-<<<<<<< HEAD
 /* stylelint-disable unknownAtRules */
+/* stylelint-disable css-ruleorselectorexpected */
 /* stylelint-disable at-rule-no-unknown */
 /* stylelint-disable alpha-value-notation */
 /* stylelint-disable function-no-unknown */
 /* stylelint-disable function-comma-space-after */
 /* stylelint-disable color-function-notation */
 /* stylelint-disable hue-degree-notation */
-$surface-1: #0a0d11;
-$surface-2: #101317;
-$surface-3: #1c2126;
-$surface-4: #1f2429;
-$surface-5: #2b3238;
-=======
 $surface-strongest: rgb(10, 10, 10);
 $surface-strong: rgb(20, 20, 20);
 $surface-moderate: rgb(28, 28, 28);
 $surface-weak: rgb(34, 34, 34);
 $surface-weakest: rgb(40, 40, 40);
->>>>>>> 945ad3940c69222d45a2bd06e0838164002b6690
 
 $white-strongest: rgb(255, 255, 255);
 $white-strong: rgba(255, 255, 255, 0.87);
@@ -48,15 +41,8 @@ $purple-light: rgb(128, 102, 245);
 $pink-normal: rgb(213, 108, 195);
 $pink-light: rgb(223, 129, 207);
 
-<<<<<<< HEAD
-$highlight: lighten($surface-2, 10%);
-
-// TODO: is there a better way to do this? this is for example used in gnome-calculator for the result top-border
-@define-color borders #{"" +$surface-2};
-=======
 $accent-primary: $purple-normal;
 $accent-secondary: $green-normal;
 
 // TODO: is there a better way to do this? this is for example used in gnome-calculator for the result top-border
 @define-color borders #{"" +$surface-strong};
->>>>>>> 945ad3940c69222d45a2bd06e0838164002b6690
