@@ -5,11 +5,11 @@
 /* stylelint-disable function-comma-space-after */
 /* stylelint-disable color-function-notation */
 /* stylelint-disable hue-degree-notation */
-$surface-1: hsl(240, 3%, 4%);
-$surface-2: hsl(240, 3%, 8%);
-$surface-3: hsl(240, 3%, 12%);
-$surface-4: hsl(240, 3%, 16%);
-$surface-5: hsl(240, 3%, 20%);
+$surface-1: #0a0d11;
+$surface-2: #101317;
+$surface-3: #1c2126;
+$surface-4: #1f2429;
+$surface-5: #2b3238;
 
 $accent-1: hsl(0,60%,60%);
 $accent-2: hsl(25,60%,60%);
@@ -25,7 +25,7 @@ $secondary-accent: $accent-4;
 
 $foreground-color: lighten($surface-5, 45%);
 
-$highlight: rgba(255,255,255,0.15);
+$highlight: lighten($surface-2, 10%);
 
 // TODO: is there a better way to do this? this is for example used in gnome-calculator for the result top-border
 @define-color borders #{"" +$surface-2};
