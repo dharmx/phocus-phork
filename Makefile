@@ -1,6 +1,6 @@
-PREFIX = /home/maker
+PREFIX = /usr
 DESTDIR ?=
-INSTALL_DIR ?= $(DESTDIR)$(PREFIX)/.themes/phocus
+INSTALL_DIR ?= $(DESTDIR)$(PREFIX)/share/themes/phocus
 
 all:
 	npm install && npm run build
